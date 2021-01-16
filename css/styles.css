@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+.header {
+    background-color: cadetblue;
+    display: block;
+    text-align: center;
+}
+
+.nav-bar {
+    display: flex;
+    background-color: rosybrown;
+    justify-content: space-evenly;
+}
+
+.nav-bar__menu li {
+    display: inline-block;
+    list-style: none;
+}
+
+.nav-bar__menu li a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.schools {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: goldenrod;
+    width: 100vw;
+}
+.school {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.school li {
+    border: 1px solid black;
+    list-style: none;
+    width: 45%;
+    text-align: center;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 1rem 0;
+    margin: 0.5rem;
+}
+
+.articles {
+    background-color: salmon;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post {
+    background-color: seagreen;
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem;
+    color: beige;
+}
+
+.offices {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: hotpink;
+    width: 100vw;
+}
+
+.office {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.office li {
+    border: 1px solid black;
+    border-radius: 10px;
+    list-style: none;
+    width: 45%;
+    padding: 1rem 0;
+    text-align: center;
+    background-color: aqua;
+    margin: 1rem;
+}
+
+@media (min-width: 820px) {
+    .post {
+        display: flex;
+        width: 47.5%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .nav-bar {
+        display: flex;
+        background-color: rosybrown;
+        justify-content: center;
+        height: 3rem;
+        align-items: center;
+    }
+
+    .nav-bar__menu li a {
+        display: inline-block;
+        list-style: none;
+        justify-content: space-between;
+    }
+
+    .articles {
+        width: 60%;
+    }
+
+    .post {
+        display: flex;
+        width: 100%;
+    }
+
+    .schools {
+        width: 20%;
+    }
+
+    .school li {
+        border: 1px solid black;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .offices {
+        width: 20%;
+    }
+    .office li {
+        border: 1px solid black;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+    }
+}
